@@ -68,7 +68,7 @@ def main(args):
     trainer.train(model,train_loader,valid_loader,optimizer,hparam,device,lr_scheduler=lr_scheduler,save_ckpt=False)
     # trainer.resume_train(model,train_loader,valid_loader,optimizer,hparam,device,ckpt_path=CKPT_PATH)
     # trainer.test(model,test_loader,hparam,device,ckpt_path=CKPT_PATH)
-
+	print("hi")
 if __name__ =='__main__':
     parser = ArgumentParser()
     parser.add_argument("--batch_size", default=16,type = int)
